@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd"
+>
+<!--    开启注解-->
+    <context:annotation-config/>
+
+    <bean id="dog" class="com.tfy.pojo.Dog"/>
+    <bean id="cat" class="com.tfy.pojo.Cat"/>
+    <bean id="user" class="com.tfy.pojo.User"></bean>
+
+    <bean id="dog1" class="com.tfy.pojo.Dog"/>
+    <bean id="dog2" class="com.tfy.pojo.Dog"/>
+    <bean id="cat1" class="com.tfy.pojo.Cat"/>
+    <bean id="cat2" class="com.tfy.pojo.Cat"/>
+
+<!--    <bean id="user" class="com.tfy.pojo.User">-->
+<!--        <property name="cat" ref="cat"/>-->
+<!--        <property name="dog" ref="dog"/>-->
+<!--        <property name="str" value="qinjiang"/>-->
+<!--    </bean>-->
+
+
+<!--&lt;!&ndash;byName保证属性名 和bean id一致&ndash;&gt;-->
+<!--    <bean id="user" class="com.tfy.pojo.User" autowire="byName">-->
+<!--        <property name="str" value="qinjiang"/>-->
+<!--    </bean>-->
+
+
+<!--    byType保证一种类型的bean唯一，不能有第二个同类型bean-->
+<!--    <bean id="user" class="com.tfy.pojo.User" autowire="byType">-->
+<!--        <property name="str" value="qinjiang"/>-->
+<!--    </bean>-->
+
+</beans>

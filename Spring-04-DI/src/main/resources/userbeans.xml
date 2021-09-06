@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--  &lt;!&ndash;P(属性: properties)命名空间 , 属性依然要设置set方法,   需要无参构造函数&ndash;&gt;-->
+<!--  <bean id="user" class="com.tfy.pojo.User" p:name="111" p:age="19">-->
+
+<!--  </bean>-->
+
+
+  <!--C(构造: Constructor)命名空间 , 属性依然要设置set方法  需要有参构造函数-->
+  <bean id="user" class="com.tfy.pojo.User" c:name="狂神1" c:age="18"/>
+
+</beans>
